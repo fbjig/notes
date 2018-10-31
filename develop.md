@@ -60,5 +60,10 @@ Reiniciamos samba:
 
     sudo /etc/init.d/smbd restart
 
+## Instalación de Apache, PHP y MySQL
 
+    sudo apt-get update
+    sudo apt-get upgrade
+    
+    
     
