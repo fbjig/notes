@@ -22,4 +22,14 @@ Luego reiniciamos el servicio de red y probamos ping de nuevo.
     sudo ifup eth0
     ping google.es
   
- 
+## Configuración SSH para manejar la máquina virtual por Putty
+
+Instalamos SSH.
+
+    sudo apt update
+    sudo apt install ssh
+    
+Cargamos Putty y ponemos la IP que hemos indicado en address (paso anterior).
+
+## Configuración Samba (ver archivos desde windows)
+
