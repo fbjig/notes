@@ -33,3 +33,32 @@ Cargamos Putty y ponemos la IP que hemos indicado en address (paso anterior).
 
 ## Configuración Samba (ver archivos desde windows)
 
+Instalamos samba:
+    
+    sudo apt-get install samba samba-common python-glade2 system-config-samba
+
+Configuramos samba:
+    
+    sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.backup
+    sudo nano /etc/samba/smb.conf
+    
+Ponemos lo siguiente en el archivo de configuración:
+
+    [fernando]
+    comment = Directorio de samba
+    path = /home/fernando   # directorio a compartir
+    gest ok = no
+    browseable = yes
+    create mask = 0755
+    directory mask = 0755
+    
+Ponemos contraseña al usuario con el que se accedera desde windows:
+
+    sudo smbpasswd -L -a fernando
+
+Reiniciamos samba:
+
+    sudo /etc/init.d/smbd restart
+
+
+    
