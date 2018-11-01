@@ -65,5 +65,15 @@ Reiniciamos samba:
     sudo apt-get update
     sudo apt-get upgrade
     
+    sudo apt-get install apache2
     
+    sudo apt-get install mysql-server
+    
+    sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql php-cgi php-curl php-json
+    
+Si por lo que sea no se puede instalar el PHP (7.1 o mayor en fecha 2018-11) porque tenemos un Ubuntu viejo, instalar los repositios ondrej y ejecutar la misma orden conla version de php especificada.
+
+    sudo add-apt-repository ppa:ondrej/php
+    sudo apt-get update
+    sudo apt-get install php7.1 libapache2-mod-php7.1 php7.1-mcrypt php7.1-mysql php7.1-cgi php7.1-curl php7.1-json
     
