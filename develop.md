@@ -46,9 +46,10 @@ Ponemos lo siguiente en el archivo de configuración:
 
     [fernando]
     comment = Directorio de samba
-    path = /home/fernando   # directorio a compartir
-    gest ok = no
+    path = /var/www
     browseable = yes
+    writeable = yes
+    public = yes
     create mask = 0755
     directory mask = 0755
     
