@@ -78,3 +78,19 @@ Si por lo que sea no se puede instalar el PHP (7.1 o mayor en fecha 2018-11) por
     sudo apt-get update
     sudo apt-get install php7.1 libapache2-mod-php7.1 php7.1-mcrypt php7.1-mysql php7.1-cgi php7.1-curl php7.1-json
     
+### Dar permisos para poder acceder a MYSQL desde Heidi
+
+Entramos a este archivo y comentamos el `bind-address`
+    
+    sudo nano /etc/mysql/my.cnf
+    sudo service mysql restart
+    
+Damos permisos al usuario:
+
+    mysql -u root -p
+    GRANT ALL ON *.* to root@'%' IDENTIFIED BY 'mipassword';
+    FLUSH PRIVILEGES;
+    exit
+    
+  
+    
