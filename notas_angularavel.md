@@ -9,4 +9,4 @@
     
 Nuevo proyecto:
 
-   sudo ng new nombreCarpeta --unsafe-perm=true
+    sudo ng new nombreCarpeta --unsafe-perm=true
