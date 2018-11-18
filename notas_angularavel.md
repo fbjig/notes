@@ -10,3 +10,8 @@
 Nuevo proyecto:
 
     sudo ng new nombreCarpeta --unsafe-perm=true
+
+Acceso desde remoto:
+
+    ng serve --host 0.0.0.0
+    
